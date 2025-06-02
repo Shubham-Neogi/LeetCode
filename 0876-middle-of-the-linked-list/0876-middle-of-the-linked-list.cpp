@@ -22,10 +22,9 @@ public:
     ListNode* middleNode(ListNode* head) {
         int n=getLength(head);
         int position=n/2+1;
-        int currPosition=1;
         ListNode*temp=head;
-        while(currPosition!=position){
-            currPosition++;
+        while(position!=1){
+            position--;
             temp=temp->next;
         }
         return temp;
