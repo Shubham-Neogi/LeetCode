@@ -19,6 +19,7 @@ public:
             prev=curr;
             curr=nextNode;
         }
-        return prev;
+        head=prev;  //updating head
+        return head;
     }
 };
